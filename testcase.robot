@@ -85,6 +85,6 @@ change the colour red
     @{handles1} =   Get Window Handles 
     #${color} =  Get Value    xpath=//input[@name='my-colors']
     #Log    The color of the element is: ${color}
-    #Log    The color of the element is: ${color}
+
     @{handles} =    Get Window Handles
     @{winTIT} =   Get Window Titles
