@@ -1,9 +1,9 @@
-*** Settings ***
+*** settings ***
 Documentation   Open Google Web Browser
 Library         SeleniumLibrary  
 Test Setup    Open Selenium web form
 Test Teardown    Close Browser  
-Resource     Variable.robot
+Resource     Variables.robot
 
 
 *** Test Cases ***
@@ -12,7 +12,7 @@ Log Message
 Open Google
     #Close All Browsers
     #Open Selenium web form
-    TextInput    Hello World
+    TextInput   Hello World
     EnterPassword    I Know You
     MyTextArea    We are going to explore the selenium web form
     CheckElement
