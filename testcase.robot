@@ -1,15 +1,18 @@
 *** settings ***
 Documentation   Open Google Web Browser
 Library         SeleniumLibrary  
-Test Setup    Open Selenium web form
-Test Teardown    Close Browser  
+Test Setup    Open Selenium web form  # used to open selenium web site for each test case execution
+Test Teardown    Close Browser  # Close the current brower
 Resource     Variables.robot
 
 
 *** Test Cases ***
-Log Message
+# This Test case is used to log Hellow world in outut
+Print First Message
     Log    Hello World
-Open Google
+
+# This test case is use to check each elements in the Selenium web form.
+Selenium Form
     #Close All Browsers
     #Open Selenium web form
     TextInput   Hello World
@@ -23,7 +26,7 @@ Open Google
     swap the checkbox selection
     Select RButton
     change the colour red
-    [Teardown]     Close Browser
+ 
 
 *** Keywords ***
 Open Selenium web form
